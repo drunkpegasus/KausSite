@@ -1,0 +1,63 @@
+.messageContainer {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+  transition: box-shadow 0.5s ease;
+}
+
+.messageContainer:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+  transition: box-shadow 0.5s ease, transform 0.5s ease 500ms;
+}
+
+/* MessageList.css */
+
+.messageContainer {
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.username {
+  font-weight: bold;
+  color: #c770f0;
+  border-bottom: 1px solid #533a5e;
+  padding-bottom: 1px;
+}
+
+.messageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.gap {
+  height: 15px;
+}
+
+.buttonStyle {
+  background-color: #241a38;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 140px;
+  height: 30px;
+  align-items: center;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, border 0.3s ease; /* Add transition for box-shadow, background-color, and border */
+  border: 1px solid transparent; /* Add a transparent border */
+}
+
+.buttonStyle:hover {
+  background-color: #4d3474; /* Change background color on hover */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* Add glow effect on hover */
+  border-color: #c770f0; /* Change border color on hover to make it glow */
+}
+
+.iconStyle {
+  font-size: 20px; /* Adjust the size as needed */
+}
+

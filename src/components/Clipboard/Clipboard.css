@@ -1,0 +1,18 @@
+.clipboards-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-top: 80px;
+    color: #f5efef 
+  }
+  
+  .clipboards-container {
+    padding: 20px;
+    color: #f5efef; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .clipboards-container {
+      margin-top: 50px; 
+    }
+  }

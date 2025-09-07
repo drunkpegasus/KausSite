@@ -1,0 +1,69 @@
+.review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    padding: 20px;
+    user-select: text;
+  }
+  
+  .centered-para {
+    
+    margin: 0 auto; 
+    max-width: 800px; 
+    text-align: left; 
+    line-height: 1.65rem;
+  }
+  
+  .image-text-container {
+    
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center; 
+    margin-top: 20px; 
+  }
+  
+  .review-text {
+    
+    max-width: 50%; 
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .review-image {
+    
+    max-width: 50%; 
+    margin-top: 20px; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .image-text-container {
+      flex-direction: column; 
+    }
+  
+    .review-text,
+    .review-image {
+      max-width: 100%; 
+    }
+  }
+  
+  
+.movie-review-detail-background {
+  
+  background-color: #010101;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  width: 100%;
+  height:fit-content;
+  min-height: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .movie-review-detail-background h2 {
+    margin-top: 150px; 
+  }
+}

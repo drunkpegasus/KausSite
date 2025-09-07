@@ -1,0 +1,243 @@
+.tic-tac-toe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+    color: #ffffff;
+  }
+  
+  .status {
+    font-size: 24px;
+    margin: 20px;
+    color: #ffffff;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 15px;
+    width: 370px;
+  }
+  
+
+  .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    width: 100%;
+    height: 100px;
+    border: 2px solid #fff; 
+    cursor: pointer;
+    background-color: transparent; 
+    transition: background-color 0.3s;
+    color: #62fffc;
+  }
+  
+  
+.square.X {
+  color: #ed28b8; 
+}
+
+
+.square.O {
+  color: #62fffc; 
+}
+
+  
+  
+  
+.winner-text {
+  font-size: 36px;
+  color: #47f9ff; 
+  animation: pop-out 0.5s ease-in-out forwards;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0); 
+}
+
+.draw-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #47f9ff; 
+  animation: pop-out 0.5s ease-in-out forwards;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0); 
+}
+
+
+
+.winner {
+  background-color: #B08BBB; 
+  animation: pulse 1s ease-in-out infinite, glow 1s ease-in-out infinite; 
+}
+
+
+@keyframes pop-out {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes glow {
+  0% {
+    border-color: rgba(89, 38, 102, 0.23);
+    box-shadow: 0 0 10px rgba(89, 38, 102, 0.23);
+  }
+  50% {
+    border-color: rgba(89, 38, 102, 0.23);
+    box-shadow: 0 0 20px rgba(89, 38, 102, 0.23);
+  }
+  100% {
+    border-color: rgba(89, 38, 102, 0.23);
+    box-shadow: 0 0 10px rgba(89, 38, 102, 0.23);
+  }
+}
+
+  
+  .draw {
+    font-size: 20px;
+    font-weight: bold;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  
+  
+  .replay-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #241a38;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .replay-button:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
+    transition: box-shadow 0.3s ease; 
+  }
+
+  
+
+
+
+.square.X,
+.square.O {
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.square.X:hover,
+.square.O:hover {
+  transform: scale(1.1); 
+  transition: transform 0.2s ease-in-out; 
+}
+
+
+.square.active {
+  transform: scale(0.9); 
+  transition: transform 0.1s ease-in-out; 
+}
+
+
+
+
+  
+  
+  @media screen and (max-width: 768px) {
+    .tic-tac-toe {
+        margin-top: 100px; 
+      }
+
+    .status {
+      margin-top: 40px; 
+      margin-bottom: 10px; 
+      font-size: 18px; 
+    }
+  
+    .board {
+      grid-template-columns: repeat(3, 80px); 
+      width: 305px; 
+      margin: 0 auto;
+    }
+  
+    .square {
+      font-size: 24px; 
+      width: 80px; 
+      height: 80px; 
+    }
+  
+    .draw {
+      font-size: 16px; 
+    }
+  }
+  
+
+  .mode-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent black */
+  }
+  
+  .mode-selection h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #47f9ff;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+  }
+  
+  .mode-selection button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #241a38;
+    border: 2px solid #47f9ff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .mode-selection button:hover {
+    background-color: #47f9ff;
+    color: #241a38;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  
+  .mode-selection button:active {
+    transform: scale(0.95);
+  }
+  
+  

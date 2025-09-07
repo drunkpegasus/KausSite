@@ -1,0 +1,18 @@
+.messages-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  margin-top: 80px;
+  color: #f5efef 
+}
+
+.messages-container {
+  padding: 20px;
+  color: #f5efef; 
+}
+
+
+@media (max-width: 768px) {
+  .messages-container {
+    margin-top: 50px; 
+  }
+}
